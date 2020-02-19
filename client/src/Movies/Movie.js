@@ -3,8 +3,6 @@ import axios from 'axios';
 
 const Movie = (props) => {
   const [movie, setMovie] = useState();
-
-  console.log("ID", typeof props.match.params.id);
  
   useEffect(() => {
     const id = props.match.params.id;
